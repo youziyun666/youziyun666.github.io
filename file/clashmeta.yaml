@@ -4,39 +4,91 @@ bind-address: '*'
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
+global-client-fingerprint: chrome
+unified-delay: true
+geox-url:
+    mmdb: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb'
 dns:
     enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
+    ipv6: true
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+    default-nameserver: [120.53.53.53, 1.12.12.12]
+    nameserver: ['https://120.53.53.53/dns-query#skip-cert-verify=true', 'tls://1.12.12.12#skip-cert-verify=true']
+    proxy-server-nameserver: ['https://120.53.53.53/dns-query#skip-cert-verify=true', 'tls://1.12.12.12#skip-cert-verify=true']
 proxies:
-    - { name: '套餐类型：包年', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: 公众号：柚子不是niu子, type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[香港] Hong Kong  1', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[香港] Hong Kong  2', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[香港] Hong Kong  3', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[台湾] Taiwan 1', type: ss, server: js.sf1.pw, port: 23484, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[日本] Japan 1', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[日本] Japan 2', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[新加坡] Singapore 1', type: ss, server: js.sf1.pw, port: 43059, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[柬埔寨] Cambodia 1', type: ss, server: js.sf1.pw, port: 10614, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[越南] Vietnam 1', type: ss, server: js.sf1.pw, port: 33744, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[印度尼西亚] Indonesia 1', type: ss, server: js.sf1.pw, port: 19409, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[美国] United States 3', type: ss, server: js.sf1.pw, port: 46244, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[美国] United States 4', type: ss, server: js.sf1.pw, port: 46244, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[英国] United Kingdom 1', type: ss, server: js.sf1.pw, port: 48375, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
-    - { name: '[土耳其] Turkey', type: ss, server: js.sf1.pw, port: 26660, cipher: chacha20-ietf-poly1305, password: c1b0df48-dd0e-4eec-ba00-856b1f705701, udp: true }
+    - { name: 'you', type: ss, server: sz.sf1.pw, port: 38537, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: zi, type: ss, server: sz.sf1.pw, port: 38537, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  1', type: ss, server: sz.sf1.pw, port: 38537, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  2', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  3', type: ss, server: js.sf1.pw, port: 43912, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  4', type: ss, server: js.sf1.pw, port: 20134, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  5', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[香港] Hong Kong  6', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[台湾] Taiwan 1', type: ss, server: js.sf1.pw, port: 23484, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[台湾] Taiwan 2', type: ss, server: js.sf1.pw, port: 23484, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[日本] Japan 1', type: ss, server: sz.sf1.pw, port: 13312, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[日本] Japan 2', type: ss, server: sz.sf1.pw, port: 13312, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[日本] Japan 3', type: ss, server: sz.sf1.pw, port: 12633, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[日本] Japan 4', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[新加坡] Singapore 1', type: ss, server: js.sf1.pw, port: 43059, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[新加坡] Singapore 2', type: ss, server: js.sf1.pw, port: 43059, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[柬埔寨] Cambodia 1', type: ss, server: js.sf1.pw, port: 10614, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[越南] Vietnam 1', type: ss, server: js.sf1.pw, port: 33744, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[越南] Vietnam 2', type: ss, server: js.sf1.pw, port: 33744, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[马来西亚] Malaysia 1', type: ss, server: js.sf1.pw, port: 34245, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[印度尼西亚] Indonesia 1', type: ss, server: js.sf1.pw, port: 19409, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[美国] United States 1', type: ss, server: sz.sf1.pw, port: 10059, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[美国] United States 2', type: ss, server: sz.sf1.pw, port: 10059, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[美国] United States 3', type: ss, server: js.sf1.pw, port: 46244, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[美国] United States 4', type: ss, server: js.sf1.pw, port: 46244, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: yun, type: ss, server: js.sf1.pw, port: 46244, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[英国] United Kingdom 1', type: ss, server: sz.sf1.pw, port: 38833, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[英国] United Kingdom 2', type: ss, server: sz.sf1.pw, port: 38833, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[英国] United Kingdom 3', type: ss, server: sz.sf1.pw, port: 38833, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[德国] Deutschland', type: ss, server: sz.sf1.pw, port: 38833, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[土耳其] Turkey', type: ss, server: js.sf1.pw, port: 26660, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '[俄罗斯]', type: ss, server: sz.sf1.pw, port: 19054, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
+    - { name: '新加坡 01', server: aws-sgsg.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '新加坡 02', server: aws-sgsg.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: 韩国首尔, server: krseoul.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '加拿大 IPv6', server: '2607:5300:205:200::3017', port: 5022, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '香港 01', server: aws-hkhk.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '香港 02', server: aws-hkhk.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '日本 01', server: aws-jpjp.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '美国 01 三网优化', server: do-us.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '德国 01 电信联通优化', server: do-de.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '新加坡 oracle hy2', server: sg-oracle.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '日本 oracle hy2', server: jp-oracle.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '日本 Linode （联通优化）', server: jp-linode.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '美国 GPT 专用 1', server: 216.73.156.98, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '美国 GPT 专用 2', server: 216.73.156.50, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '美国 hy2', server: us-oracle.aikunapp.com, port: 5002, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: '荷兰阿姆斯特丹 hy2', server: 141.144.204.126, port: 456, sni: d1--cn-gotcha204-3.bilivideo.com, skip-cert-verify: true, type: hysteria2, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86 }
+    - { name: 有问题找柚子, type: trojan, server: 127.0.0.1, port: 443, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: cdn.hkhgc.6641634715834932.me, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
+    - { name: '新加坡 vless 01', type: vless, server: aws-sgvl.aikunapp.com, port: 5302, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: K6nGwqPY3zVa7Dbn.apple.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.aikunapp.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.aikunapp.com } }
+    - { name: '香港 vless 01', type: vless, server: aws-hkvl.aikunapp.com, port: 5202, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: U9VUpexTOklo8IfE.apple.com }
+    - { name: '日本 vless 01', type: vless, server: aws-jpvl.aikunapp.com, port: 5302, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: 05S5VOtAgUuC0qXS.apple.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.aikunapp.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.aikunapp.com } }
+    - { name: '韩国 vless 01', type: vless, server: krvl.aikunapp.com, port: 5302, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: VXzGYHktyRx1gqdu.apple.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.aikunapp.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.aikunapp.com } }
+    - { name: '日本 02 移动优化', type: vless, server: lin-tyo-vl.aikunapp.com, port: 5302, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: gx84v1VntZAjED3G.apple.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.aikunapp.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.aikunapp.com } }
+    - { name: '新加坡 02 移动优化', type: vless, server: lin-sgp-vl.aikunapp.com, port: 5302, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: H5G0AMHRaz5RNGhy.apple.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.aikunapp.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.aikunapp.com } }
+    - { name: '加拿大 高速 cdn 1', type: vmess, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-HHqLjgdAACDw3dch.sm-node.com, network: ws, ws-opts: { path: '/vmess_ws/csjc/index?ed=8192', headers: { Host: cdn-ca.sm-node.com } }, ws-path: '/vmess_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-ca.sm-node.com } }
+    - { name: '日本 高速 cdn 1', type: vmess, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-KeGszP2myzxe00Za.sm-node.com, network: ws, ws-opts: { path: '/vmess_ws/csjc/index?ed=8192', headers: { Host: cdn-jp.sm-node.com } }, ws-path: '/vmess_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-jp.sm-node.com } }
+    - { name: '新加坡 高速 cdn 1', type: vmess, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-FaAfSotZwHobwlJP.sm-node.com, network: ws, ws-opts: { path: '/vmess_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.sm-node.com } }, ws-path: '/vmess_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.sm-node.com } }
+    - { name: '加拿大 cdn 高速 2', type: vless, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-dozdNkNnYYeCL9Z7.sm-node.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-ca.sm-node.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-ca.sm-node.com } }
+    - { name: '日本 cdn 高速 2', type: vless, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-cNkpH1hPgsvRTqim.sm-node.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-jp.sm-node.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-jp.sm-node.com } }
+    - { name: '新加坡 cdn 高速 2', type: vless, server: cdncdncdn.aikunapp.com, port: 443, uuid: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-MMlSxkLKDsfsu8L5.sm-node.com, network: ws, ws-opts: { path: '/vless_ws/csjc/index?ed=8192', headers: { Host: cdn-sg.sm-node.com } }, ws-path: '/vless_ws/csjc/index?ed=8192', ws-headers: { Host: cdn-sg.sm-node.com } }
+    - { name: '香港 HKT  01（原生ip）', type: trojan, server: tj-hk-1.aikunapp.com, port: 6002, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: Kv5pqgDmxVrku2F4.apple.com.akadns.net, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
+    - { name: '香港 HKT  02（原生ip）', type: trojan, server: tj-hk-2.aikunapp.com, port: 6002, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: eeh65sxHBH3hNCyf.apple.com.akadns.net, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
+    - { name: '日本 新协议', type: trojan, server: tj-jp-1.aikunapp.com, port: 6002, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: bootcdn.xuexi.cn, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
+    - { name: '香港 新协议', type: trojan, server: aws-hkhk.aikunapp.com, port: 6002, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: bootcdn.xuexi.cn, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
+    - { name: '新加坡 Trojan 0.5x测试', type: trojan, server: tj-sg-1.aikunapp.com, port: 6002, password: 28471234-b52c-4ffe-84ee-a22a4cc1fd86, udp: true, client-fingerprint: chrome, sni: qy3F614oPuBgRlHO, skip-cert-verify: true, smux: { enabled: true, protocol: h2mux, max-streams: 4, padding: true } }
 proxy-groups:
-    - { name: 柚子云, type: select, proxies: [自动选择, 故障转移, '套餐类型：包年', 公众号：柚子不是niu子, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[台湾] Taiwan 1', '[日本] Japan 1', '[日本] Japan 2', '[新加坡] Singapore 1', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[印度尼西亚] Indonesia 1', '[美国] United States 3', '[美国] United States 4', '[英国] United Kingdom 1', '[土耳其] Turkey'] }
-    - { name: 自动选择, type: url-test, proxies: ['套餐类型：包年', 公众号：柚子不是niu子, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[台湾] Taiwan 1', '[日本] Japan 1', '[日本] Japan 2', '[新加坡] Singapore 1', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[印度尼西亚] Indonesia 1', '[美国] United States 3', '[美国] United States 4', '[英国] United Kingdom 1', '[土耳其] Turkey'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['套餐类型：包年', 公众号：柚子不是niu子, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[台湾] Taiwan 1', '[日本] Japan 1', '[日本] Japan 2', '[新加坡] Singapore 1', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[印度尼西亚] Indonesia 1', '[美国] United States 3', '[美国] United States 4', '[英国] United Kingdom 1', '[土耳其] Turkey'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 柚子云, type: select, proxies: [自动选择, 故障转移, 'you', zi, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[香港] Hong Kong  4', '[香港] Hong Kong  5', '[香港] Hong Kong  6', '[台湾] Taiwan 1', '[台湾] Taiwan 2', '[日本] Japan 1', '[日本] Japan 2', '[日本] Japan 3', '[日本] Japan 4', '[新加坡] Singapore 1', '[新加坡] Singapore 2', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[越南] Vietnam 2', '[马来西亚] Malaysia 1', '[印度尼西亚] Indonesia 1', '[美国] United States 1', '[美国] United States 2', '[美国] United States 3', '[美国] United States 4', yun, '[英国] United Kingdom 1', '[英国] United Kingdom 2', '[英国] United Kingdom 3', '[德国] Deutschland', '[土耳其] Turkey', '[俄罗斯]',自动选择, 故障转移, '新加坡 01', '新加坡 02', 韩国首尔, '加拿大 IPv6', '香港 01', '香港 02', '日本 01', '美国 01 三网优化', '德国 01 电信联通优化', '新加坡 oracle hy2', '日本 oracle hy2', '日本 Linode （联通优化）', '美国 GPT 专用 1', '美国 GPT 专用 2', '美国 hy2', '荷兰阿姆斯特丹 hy2', 有问题找柚子, '新加坡 vless 01', '香港 vless 01', '日本 vless 01', '韩国 vless 01', '日本 02 移动优化', '新加坡 02 移动优化', '加拿大 高速 cdn 1', '日本 高速 cdn 1', '新加坡 高速 cdn 1', '加拿大 cdn 高速 2', '日本 cdn 高速 2', '新加坡 cdn 高速 2', '香港 HKT  01（原生ip）', '香港 HKT  02（原生ip）', '日本 新协议', '香港 新协议', '新加坡 Trojan 0.5x测试'] }
+    - { name: 自动选择, type: url-test, proxies: ['you', zi, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[香港] Hong Kong  4', '[香港] Hong Kong  5', '[香港] Hong Kong  6', '[台湾] Taiwan 1', '[台湾] Taiwan 2', '[日本] Japan 1', '[日本] Japan 2', '[日本] Japan 3', '[日本] Japan 4', '[新加坡] Singapore 1', '[新加坡] Singapore 2', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[越南] Vietnam 2', '[马来西亚] Malaysia 1', '[印度尼西亚] Indonesia 1', '[美国] United States 1', '[美国] United States 2', '[美国] United States 3', '[美国] United States 4', yun, '[英国] United Kingdom 1', '[英国] United Kingdom 2', '[英国] United Kingdom 3', '[德国] Deutschland', '[土耳其] Turkey', '[俄罗斯]','新加坡 01', '新加坡 02', 韩国首尔, '加拿大 IPv6', '香港 01', '香港 02', '日本 01', '美国 01 三网优化', '德国 01 电信联通优化', '新加坡 oracle hy2', '日本 oracle hy2', '日本 Linode （联通优化）', '美国 GPT 专用 1', '美国 GPT 专用 2', '美国 hy2', '荷兰阿姆斯特丹 hy2', 有问题找柚子, '新加坡 vless 01', '香港 vless 01', '日本 vless 01', '韩国 vless 01', '日本 02 移动优化', '新加坡 02 移动优化', '加拿大 高速 cdn 1', '日本 高速 cdn 1', '新加坡 高速 cdn 1', '加拿大 cdn 高速 2', '日本 cdn 高速 2', '新加坡 cdn 高速 2', '香港 HKT  01（原生ip）', '香港 HKT  02（原生ip）', '日本 新协议', '香港 新协议', '新加坡 Trojan 0.5x测试'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['you', zi, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[香港] Hong Kong  4', '[香港] Hong Kong  5', '[香港] Hong Kong  6', '[台湾] Taiwan 1', '[台湾] Taiwan 2', '[日本] Japan 1', '[日本] Japan 2', '[日本] Japan 3', '[日本] Japan 4', '[新加坡] Singapore 1', '[新加坡] Singapore 2', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[越南] Vietnam 2', '[马来西亚] Malaysia 1', '[印度尼西亚] Indonesia 1', '[美国] United States 1', '[美国] United States 2', '[美国] United States 3', '[美国] United States 4', yun, '[英国] United Kingdom 1', '[英国] United Kingdom 2', '[英国] United Kingdom 3', '[德国] Deutschland', '[土耳其] Turkey', '[俄罗斯]','新加坡 01', '新加坡 02', 韩国首尔, '加拿大 IPv6', '香港 01', '香港 02', '日本 01', '美国 01 三网优化', '德国 01 电信联通优化', '新加坡 oracle hy2', '日本 oracle hy2', '日本 Linode （联通优化）', '美国 GPT 专用 1', '美国 GPT 专用 2', '美国 hy2', '荷兰阿姆斯特丹 hy2', 有问题找柚子, '新加坡 vless 01', '香港 vless 01', '日本 vless 01', '韩国 vless 01', '日本 02 移动优化', '新加坡 02 移动优化', '加拿大 高速 cdn 1', '日本 高速 cdn 1', '新加坡 高速 cdn 1', '加拿大 cdn 高速 2', '日本 cdn 高速 2', '新加坡 cdn 高速 2', '香港 HKT  01（原生ip）', '香港 HKT  02（原生ip）', '日本 新协议', '香港 新协议', '新加坡 Trojan 0.5x测试'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'DOMAIN,www.vtwoc3.top,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,柚子云'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,柚子云'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
@@ -429,7 +481,7 @@ rules:
     - 'DOMAIN-SUFFIX,sharethis.com,柚子云'
     - 'DOMAIN-SUFFIX,shazam.com,柚子云'
     - 'DOMAIN-SUFFIX,skype.com,柚子云'
-    - 'DOMAIN-SUFFIX,smartdns柚子云.com,柚子云'
+    - 'DOMAIN-SUFFIX,smartdns慈善机场.com,柚子云'
     - 'DOMAIN-SUFFIX,smartmailcloud.com,柚子云'
     - 'DOMAIN-SUFFIX,sndcdn.com,柚子云'
     - 'DOMAIN-SUFFIX,sony.com,柚子云'
