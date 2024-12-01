@@ -15,98 +15,98 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '公众号', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: 柚子不是, type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '有任何', type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '截图反馈', type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: 联系售后, type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: 获取帮助🇷🇺, type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '[香港] Hong Kong  1', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[香港] Hong Kong  2', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[香港] Hong Kong  3', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[台湾] Taiwan 1', type: ss, server: js.sf1.pw, port: 23484, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[日本] Japan 1', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[日本] Japan 2', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[新加坡] Singapore 1', type: ss, server: js.sf1.pw, port: 43059, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[柬埔寨] Cambodia 1', type: ss, server: js.sf1.pw, port: 10614, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[越南] Vietnam 1', type: ss, server: js.sf1.pw, port: 33744, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[马来西亚] Malaysia 1', type: ss, server: js.sf1.pw, port: 34245, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[印度尼西亚] Indonesia 1', type: ss, server: js.sf1.pw, port: 19409, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[美国] United States 1', type: ss, server: js.sf1.pw, port: 22514, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[美国] United States 2', type: ss, server: js.sf1.pw, port: 22514, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[英国] United Kingdom 1', type: ss, server: js.sf1.pw, port: 48375, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '[土耳其] Turkey', type: ss, server: js.sf1.pw, port: 26660, cipher: chacha20-ietf-poly1305, password: 5c494cb0-c7cd-420e-9297-76effe14637a, udp: true }
-    - { name: '🇭🇰 香港1_解锁', type: ss, server: hk.1.thap.xyz, port: 58606, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港2_解锁', type: ss, server: hk.2.thap.xyz, port: 58494, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港3_解锁', type: ss, server: hk.3.thap.xyz, port: 58691, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港4_解锁', type: ss, server: hk.4.thap.xyz, port: 58578, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港5_解锁', type: ss, server: hk.1.thap.xyz, port: 58878, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港6_解锁', type: ss, server: hk.2.thap.xyz, port: 58061, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港7_解锁', type: ss, server: hk.3.thap.xyz, port: 58666, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港8_解锁', type: ss, server: hk.4.thap.xyz, port: 58021, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港9_解锁', type: ss, server: hk.1.thap.xyz, port: 58767, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港10_解锁', type: ss, server: hk.2.thap.xyz, port: 58736, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港11_解锁', type: ss, server: hk.3.thap.xyz, port: 58717, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇰 香港12_解锁', type: ss, server: hk.1.thap.xyz, port: 58543, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡1_解锁', type: ss, server: sg.1.thap.xyz, port: 58166, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡2_解锁', type: ss, server: sg.2.thap.xyz, port: 58886, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡3_解锁', type: ss, server: sg.3.thap.xyz, port: 58326, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡4_解锁', type: ss, server: sg.4.thap.xyz, port: 58179, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡5_解锁', type: ss, server: sg.1.thap.xyz, port: 58226, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡6_解锁', type: ss, server: sg.2.thap.xyz, port: 58181, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡7_解锁', type: ss, server: sg.3.thap.xyz, port: 58060, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡8_解锁', type: ss, server: sg.4.thap.xyz, port: 58193, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡9_解锁', type: ss, server: sg.1.thap.xyz, port: 58154, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇸🇬 新加坡10_解锁', type: ss, server: sg.2.thap.xyz, port: 58992, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本1_解锁', type: ss, server: jp.1.thap.xyz, port: 58146, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本2_解锁', type: ss, server: jp.2.thap.xyz, port: 58527, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本3_解锁', type: ss, server: jp.3.thap.xyz, port: 58757, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本4_解锁', type: ss, server: jp.4.thap.xyz, port: 58649, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本5_解锁', type: ss, server: jp.1.thap.xyz, port: 58588, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本6_解锁', type: ss, server: jp.2.thap.xyz, port: 58857, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本7_解锁', type: ss, server: jp.3.thap.xyz, port: 58100, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇯🇵 日本8_解锁', type: ss, server: jp.4.thap.xyz, port: 58876, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国1_解锁', type: ss, server: us.1.thap.xyz, port: 58352, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国2_解锁', type: ss, server: us.2.thap.xyz, port: 58411, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国3_解锁', type: ss, server: us.3.thap.xyz, port: 58384, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国4_解锁', type: ss, server: us.1.thap.xyz, port: 58958, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国5_解锁', type: ss, server: us.2.thap.xyz, port: 58752, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国6_解锁', type: ss, server: us.3.thap.xyz, port: 58219, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国7_解锁', type: ss, server: us.1.thap.xyz, port: 58612, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇺🇸 美国8_解锁', type: ss, server: us.1.thap.xyz, port: 58888, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇨🇦 加拿大2', type: ss, server: us.3.thap.xyz, port: 58288, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇹🇼 台湾1_解锁', type: ss, server: nb.1.thap.xyz, port: 58047, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇹🇼 台湾2_解锁', type: ss, server: nb.2.thap.xyz, port: 58011, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇰🇷 韩国1', type: ss, server: nb.3.thap.xyz, port: 58884, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇦🇹 奥地利', type: ss, server: nb.4.thap.xyz, port: 58499, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇲🇽 墨西哥', type: ss, server: us.2.thap.xyz, port: 58820, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇦🇪 阿联酋', type: ss, server: nb.1.thap.xyz, port: 58369, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇦🇷 阿根廷', type: ss, server: nb.2.thap.xyz, port: 58991, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇹🇷 土耳其', type: ss, server: nb.3.thap.xyz, port: 58587, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇹🇷 土耳其2', type: ss, server: nb.3.thap.xyz, port: 58332, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇳🇱 荷兰', type: ss, server: nb.4.thap.xyz, port: 58168, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇷🇺 俄罗斯', type: ss, server: nb.1.thap.xyz, port: 58582, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇮🇸 冰岛', type: ss, server: nb.3.thap.xyz, port: 58321, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇬🇧 英国2', type: ss, server: nb.4.thap.xyz, port: 58707, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇭🇺 匈牙利', type: ss, server: nb.4.thap.xyz, port: 58575, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇩🇪 德国', type: ss, server: nb.1.thap.xyz, port: 58260, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇹🇭 泰国', type: ss, server: nb.3.thap.xyz, port: 58608, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇨🇱 智利', type: ss, server: nb.3.thap.xyz, port: 58163, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇫🇮 芬兰', type: ss, server: nb.3.thap.xyz, port: 58134, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇮🇳 印度1', type: ss, server: nb.4.thap.xyz, port: 58716, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇲🇾 马来西亚', type: ss, server: nb.1.thap.xyz, port: 58114, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇰🇭 柬埔寨', type: ss, server: nb.1.thap.xyz, port: 58116, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇻🇳 越南', type: ss, server: nb.2.thap.xyz, port: 58275, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇳🇬 尼日利亚', type: ss, server: nb.2.thap.xyz, port: 58157, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇿🇦 南非', type: ss, server: nb.2.thap.xyz, port: 58427, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇦🇺 澳大利亚', type: ss, server: nb5.thap.xyz, port: 58559, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇫🇷 法国', type: ss, server: nb5.thap.xyz, port: 58395, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇨🇭 瑞士', type: ss, server: nb5.thap.xyz, port: 58065, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇧🇷 巴西', type: ss, server: nb5.thap.xyz, port: 58524, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇮🇱 以色列', type: ss, server: nb5.thap.xyz, port: 58877, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇮🇩 印度尼西亚', type: ss, server: nb5.thap.xyz, port: 58948, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇵🇭 菲律宾', type: ss, server: nb.4.thap.xyz, port: 58949, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
-    - { name: '🇪🇬 埃及', type: ss, server: nb5.thap.xyz, port: 58950, cipher: chacha20-ietf-poly1305, password: cadb2c47-141b-4009-b295-3707416a042e, udp: true }
+    - { name: '公众号', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: 柚子不是, type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '有任何', type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '截图反馈', type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: 联系售后, type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: 获取帮助🇷🇺, type: ss, server: nb.4.thap.xyz, port: 58237, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '[香港] Hong Kong  1', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[香港] Hong Kong  2', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[香港] Hong Kong  3', type: ss, server: js.sf1.pw, port: 11848, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[台湾] Taiwan 1', type: ss, server: js.sf1.pw, port: 23484, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[日本] Japan 1', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[日本] Japan 2', type: ss, server: js.sf1.pw, port: 41799, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[新加坡] Singapore 1', type: ss, server: js.sf1.pw, port: 43059, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[柬埔寨] Cambodia 1', type: ss, server: js.sf1.pw, port: 10614, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[越南] Vietnam 1', type: ss, server: js.sf1.pw, port: 33744, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[马来西亚] Malaysia 1', type: ss, server: js.sf1.pw, port: 34245, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[印度尼西亚] Indonesia 1', type: ss, server: js.sf1.pw, port: 19409, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[美国] United States 1', type: ss, server: js.sf1.pw, port: 22514, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[美国] United States 2', type: ss, server: js.sf1.pw, port: 22514, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[英国] United Kingdom 1', type: ss, server: js.sf1.pw, port: 48375, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '[土耳其] Turkey', type: ss, server: js.sf1.pw, port: 26660, cipher: chacha20-ietf-poly1305, password: b32cb994-eaa0-4219-b4ce-7b5c0bc720c2, udp: true }
+    - { name: '🇭🇰 香港1_解锁', type: ss, server: hk.1.thap.xyz, port: 58606, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港2_解锁', type: ss, server: hk.2.thap.xyz, port: 58494, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港3_解锁', type: ss, server: hk.3.thap.xyz, port: 58691, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港4_解锁', type: ss, server: hk.4.thap.xyz, port: 58578, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港5_解锁', type: ss, server: hk.1.thap.xyz, port: 58878, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港6_解锁', type: ss, server: hk.2.thap.xyz, port: 58061, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港7_解锁', type: ss, server: hk.3.thap.xyz, port: 58666, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港8_解锁', type: ss, server: hk.4.thap.xyz, port: 58021, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港9_解锁', type: ss, server: hk.1.thap.xyz, port: 58767, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港10_解锁', type: ss, server: hk.2.thap.xyz, port: 58736, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港11_解锁', type: ss, server: hk.3.thap.xyz, port: 58717, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇰 香港12_解锁', type: ss, server: hk.1.thap.xyz, port: 58543, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡1_解锁', type: ss, server: sg.1.thap.xyz, port: 58166, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡2_解锁', type: ss, server: sg.2.thap.xyz, port: 58886, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡3_解锁', type: ss, server: sg.3.thap.xyz, port: 58326, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡4_解锁', type: ss, server: sg.4.thap.xyz, port: 58179, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡5_解锁', type: ss, server: sg.1.thap.xyz, port: 58226, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡6_解锁', type: ss, server: sg.2.thap.xyz, port: 58181, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡7_解锁', type: ss, server: sg.3.thap.xyz, port: 58060, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡8_解锁', type: ss, server: sg.4.thap.xyz, port: 58193, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡9_解锁', type: ss, server: sg.1.thap.xyz, port: 58154, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇸🇬 新加坡10_解锁', type: ss, server: sg.2.thap.xyz, port: 58992, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本1_解锁', type: ss, server: jp.1.thap.xyz, port: 58146, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本2_解锁', type: ss, server: jp.2.thap.xyz, port: 58527, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本3_解锁', type: ss, server: jp.3.thap.xyz, port: 58757, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本4_解锁', type: ss, server: jp.4.thap.xyz, port: 58649, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本5_解锁', type: ss, server: jp.1.thap.xyz, port: 58588, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本6_解锁', type: ss, server: jp.2.thap.xyz, port: 58857, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本7_解锁', type: ss, server: jp.3.thap.xyz, port: 58100, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇯🇵 日本8_解锁', type: ss, server: jp.4.thap.xyz, port: 58876, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国1_解锁', type: ss, server: us.1.thap.xyz, port: 58352, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国2_解锁', type: ss, server: us.2.thap.xyz, port: 58411, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国3_解锁', type: ss, server: us.3.thap.xyz, port: 58384, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国4_解锁', type: ss, server: us.1.thap.xyz, port: 58958, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国5_解锁', type: ss, server: us.2.thap.xyz, port: 58752, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国6_解锁', type: ss, server: us.3.thap.xyz, port: 58219, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国7_解锁', type: ss, server: us.1.thap.xyz, port: 58612, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇺🇸 美国8_解锁', type: ss, server: us.1.thap.xyz, port: 58888, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇨🇦 加拿大2', type: ss, server: us.3.thap.xyz, port: 58288, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇹🇼 台湾1_解锁', type: ss, server: nb.1.thap.xyz, port: 58047, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇹🇼 台湾2_解锁', type: ss, server: nb.2.thap.xyz, port: 58011, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇰🇷 韩国1', type: ss, server: nb.3.thap.xyz, port: 58884, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇦🇹 奥地利', type: ss, server: nb.4.thap.xyz, port: 58499, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇲🇽 墨西哥', type: ss, server: us.2.thap.xyz, port: 58820, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇦🇪 阿联酋', type: ss, server: nb.1.thap.xyz, port: 58369, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇦🇷 阿根廷', type: ss, server: nb.2.thap.xyz, port: 58991, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇹🇷 土耳其', type: ss, server: nb.3.thap.xyz, port: 58587, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇹🇷 土耳其2', type: ss, server: nb.3.thap.xyz, port: 58332, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇳🇱 荷兰', type: ss, server: nb.4.thap.xyz, port: 58168, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇷🇺 俄罗斯', type: ss, server: nb.1.thap.xyz, port: 58582, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇮🇸 冰岛', type: ss, server: nb.3.thap.xyz, port: 58321, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇬🇧 英国2', type: ss, server: nb.4.thap.xyz, port: 58707, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇭🇺 匈牙利', type: ss, server: nb.4.thap.xyz, port: 58575, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇩🇪 德国', type: ss, server: nb.1.thap.xyz, port: 58260, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇹🇭 泰国', type: ss, server: nb.3.thap.xyz, port: 58608, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇨🇱 智利', type: ss, server: nb.3.thap.xyz, port: 58163, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇫🇮 芬兰', type: ss, server: nb.3.thap.xyz, port: 58134, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇮🇳 印度1', type: ss, server: nb.4.thap.xyz, port: 58716, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇲🇾 马来西亚', type: ss, server: nb.1.thap.xyz, port: 58114, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇰🇭 柬埔寨', type: ss, server: nb.1.thap.xyz, port: 58116, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇻🇳 越南', type: ss, server: nb.2.thap.xyz, port: 58275, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇳🇬 尼日利亚', type: ss, server: nb.2.thap.xyz, port: 58157, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇿🇦 南非', type: ss, server: nb.2.thap.xyz, port: 58427, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇦🇺 澳大利亚', type: ss, server: nb5.thap.xyz, port: 58559, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇫🇷 法国', type: ss, server: nb5.thap.xyz, port: 58395, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇨🇭 瑞士', type: ss, server: nb5.thap.xyz, port: 58065, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇧🇷 巴西', type: ss, server: nb5.thap.xyz, port: 58524, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇮🇱 以色列', type: ss, server: nb5.thap.xyz, port: 58877, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇮🇩 印度尼西亚', type: ss, server: nb5.thap.xyz, port: 58948, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇵🇭 菲律宾', type: ss, server: nb.4.thap.xyz, port: 58949, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
+    - { name: '🇪🇬 埃及', type: ss, server: nb5.thap.xyz, port: 58950, cipher: chacha20-ietf-poly1305, password: 69b67511-a54e-4e78-97b7-0a29d7ffd1e2, udp: true }
 proxy-groups:
     - { name: 柚子云, type: select, proxies: [自动选择, 故障转移,'公众号', 柚子不是, '有任何', '截图反馈', 联系售后, 获取帮助🇷🇺,'[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[台湾] Taiwan 1', '[日本] Japan 1', '[日本] Japan 2', '[新加坡] Singapore 1', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[马来西亚] Malaysia 1', '[印度尼西亚] Indonesia 1', '[美国] United States 1', '[美国] United States 2', '[英国] United Kingdom 1', '[土耳其] Turkey', '🇭🇰 香港1_解锁', '🇭🇰 香港2_解锁', '🇭🇰 香港3_解锁', '🇭🇰 香港4_解锁', '🇭🇰 香港5_解锁', '🇭🇰 香港6_解锁', '🇭🇰 香港7_解锁', '🇭🇰 香港8_解锁', '🇭🇰 香港9_解锁', '🇭🇰 香港10_解锁', '🇭🇰 香港11_解锁', '🇭🇰 香港12_解锁', '🇸🇬 新加坡1_解锁', '🇸🇬 新加坡2_解锁', '🇸🇬 新加坡3_解锁', '🇸🇬 新加坡4_解锁', '🇸🇬 新加坡5_解锁', '🇸🇬 新加坡6_解锁', '🇸🇬 新加坡7_解锁', '🇸🇬 新加坡8_解锁', '🇸🇬 新加坡9_解锁', '🇸🇬 新加坡10_解锁', '🇯🇵 日本1_解锁', '🇯🇵 日本2_解锁', '🇯🇵 日本3_解锁', '🇯🇵 日本4_解锁', '🇯🇵 日本5_解锁', '🇯🇵 日本6_解锁', '🇯🇵 日本7_解锁', '🇯🇵 日本8_解锁', '🇺🇸 美国1_解锁', '🇺🇸 美国2_解锁', '🇺🇸 美国3_解锁', '🇺🇸 美国4_解锁', '🇺🇸 美国5_解锁', '🇺🇸 美国6_解锁', '🇺🇸 美国7_解锁', '🇺🇸 美国8_解锁', '🇨🇦 加拿大2', '🇹🇼 台湾1_解锁', '🇹🇼 台湾2_解锁', '🇰🇷 韩国1', '🇦🇹 奥地利', '🇲🇽 墨西哥', '🇦🇪 阿联酋', '🇦🇷 阿根廷', '🇹🇷 土耳其', '🇹🇷 土耳其2', '🇳🇱 荷兰', '🇷🇺 俄罗斯', '🇮🇸 冰岛', '🇬🇧 英国2', '🇭🇺 匈牙利', '🇩🇪 德国', '🇹🇭 泰国', '🇨🇱 智利', '🇫🇮 芬兰', '🇮🇳 印度1', '🇲🇾 马来西亚', '🇰🇭 柬埔寨', '🇻🇳 越南', '🇳🇬 尼日利亚', '🇿🇦 南非', '🇦🇺 澳大利亚', '🇫🇷 法国', '🇨🇭 瑞士', '🇧🇷 巴西', '🇮🇱 以色列', '🇮🇩 印度尼西亚', '🇵🇭 菲律宾', '🇪🇬 埃及'] }
     - { name: 自动选择, type: url-test, proxies: ['公众号', 柚子不是,'有任何', '截图反馈', 联系售后, 获取帮助🇷🇺, '[香港] Hong Kong  1', '[香港] Hong Kong  2', '[香港] Hong Kong  3', '[台湾] Taiwan 1', '[日本] Japan 1', '[日本] Japan 2', '[新加坡] Singapore 1', '[柬埔寨] Cambodia 1', '[越南] Vietnam 1', '[马来西亚] Malaysia 1', '[印度尼西亚] Indonesia 1', '[美国] United States 1', '[美国] United States 2', '[英国] United Kingdom 1', '[土耳其] Turkey','🇭🇰 香港1_解锁', '🇭🇰 香港2_解锁', '🇭🇰 香港3_解锁', '🇭🇰 香港4_解锁', '🇭🇰 香港5_解锁', '🇭🇰 香港6_解锁', '🇭🇰 香港7_解锁', '🇭🇰 香港8_解锁', '🇭🇰 香港9_解锁', '🇭🇰 香港10_解锁', '🇭🇰 香港11_解锁', '🇭🇰 香港12_解锁', '🇸🇬 新加坡1_解锁', '🇸🇬 新加坡2_解锁', '🇸🇬 新加坡3_解锁', '🇸🇬 新加坡4_解锁', '🇸🇬 新加坡5_解锁', '🇸🇬 新加坡6_解锁', '🇸🇬 新加坡7_解锁', '🇸🇬 新加坡8_解锁', '🇸🇬 新加坡9_解锁', '🇸🇬 新加坡10_解锁', '🇯🇵 日本1_解锁', '🇯🇵 日本2_解锁', '🇯🇵 日本3_解锁', '🇯🇵 日本4_解锁', '🇯🇵 日本5_解锁', '🇯🇵 日本6_解锁', '🇯🇵 日本7_解锁', '🇯🇵 日本8_解锁', '🇺🇸 美国1_解锁', '🇺🇸 美国2_解锁', '🇺🇸 美国3_解锁', '🇺🇸 美国4_解锁', '🇺🇸 美国5_解锁', '🇺🇸 美国6_解锁', '🇺🇸 美国7_解锁', '🇺🇸 美国8_解锁', '🇨🇦 加拿大2', '🇹🇼 台湾1_解锁', '🇹🇼 台湾2_解锁', '🇰🇷 韩国1', '🇦🇹 奥地利', '🇲🇽 墨西哥', '🇦🇪 阿联酋', '🇦🇷 阿根廷', '🇹🇷 土耳其', '🇹🇷 土耳其2', '🇳🇱 荷兰', '🇷🇺 俄罗斯', '🇮🇸 冰岛', '🇬🇧 英国2', '🇭🇺 匈牙利', '🇩🇪 德国', '🇹🇭 泰国', '🇨🇱 智利', '🇫🇮 芬兰', '🇮🇳 印度1', '🇲🇾 马来西亚', '🇰🇭 柬埔寨', '🇻🇳 越南', '🇳🇬 尼日利亚', '🇿🇦 南非', '🇦🇺 澳大利亚', '🇫🇷 法国', '🇨🇭 瑞士', '🇧🇷 巴西', '🇮🇱 以色列', '🇮🇩 印度尼西亚', '🇵🇭 菲律宾', '🇪🇬 埃及'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
